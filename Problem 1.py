@@ -1,10 +1,9 @@
 #Deshawn Smith
-#4/9/2019
+#04/16/2019
 
-#Problem 1 converts degrees into Fahrenheit.
+#Problem 1 this is a for loop that iterate over a dictionary.
 
-F = int(input("Degrees Fahrenheit"))
+d = {"a": 5, "b": 10, "c": 15}
 
-C = (F - 32) * 5/9
-
-print(C)
+for x, y in d.items():
+    print(x, y)

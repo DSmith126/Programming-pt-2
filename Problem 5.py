@@ -1,13 +1,16 @@
 #Deshawn Smith
-#04/09/2019
+#04/16/2019
 
-#Problem 5 this will give you a list of unique elements out of a list.
+#program will count the number of times each letter shows up in a string
 
-numbers = [1,3,3,3,6,2,3,5]
+s = "a, e, i, o, u, get, appeared"
 
-un = []
-for n in numbers:
-    if n not in un:
-        un.append(n)
+d = {}
 
-print (un)
+for x in 'abcdefghijklmnopqustuvwxyz':
+    d[x] = 0
+
+for letter in s:
+    if letter in d:
+        d[letter] += 1
+print(d)

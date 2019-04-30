@@ -1,13 +1,12 @@
 #Deshawn Smith
-#04/09/2019
+#04/19/2019
 
-#Problem 2 this will tell you the number of day of the week you returned on.
+#Problem 2 this program will create a dictionary that range keys from 1 to 20.
 
-day = int(input("number 0 - 6"))
+DS = {}
 
-gone = int(input("How long were you gone?"))
+DS[1] = 1**3
+for x in range(1,21):
+    DS[x] = x**3
 
-gone % 7
-
-((gone % 7) + day) 
-print(((gone % 7) + day) % 7)
+print(DS)

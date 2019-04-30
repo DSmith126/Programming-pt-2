@@ -1,13 +1,12 @@
 #Deshawn Smith
-#4/9/2019
+#04/16/2019
 
-#Problem 6 this will give us 100 random numbers between 1 and 1000 then it will append the list
+#Problem 6 this will ask the user for a number and give an error if the number is over 20.
 
-import random
+x = int(input("Please enter a number. "))
 
-n = []
+if x > 20:
+    raise Exception("Sorry that number is to big.")
 
-for x in range(100):
-    n.append(random.randrange(1,1000))
-
-print (n)
+else:
+    print(x)
