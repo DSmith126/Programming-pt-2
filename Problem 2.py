@@ -1,12 +1,34 @@
 #Deshawn Smith
-#04/19/2019
+#4/30/2019
 
-#Problem 2 this program will create a dictionary that range keys from 1 to 20.
+#This program will give you a students name and major.
 
-DS = {}
 
-DS[1] = 1**3
-for x in range(1,21):
-    DS[x] = x**3
+class student:
+    def __init__(self, name, major):
+        self.name = name
+        self.major = major
 
-print(DS)
+    def myfunc(self):
+        print("Hello my name is " + self.name)
+
+p1 = student("Deshawn", "Computer Science")
+p2 = student("Melenie", "Applied Communications")
+
+
+print(p1.name)
+print(p1.major)
+
+p1.myfunc()
+
+
+p1.major = "Computer Science"
+
+print(p1.major)
+
+del p1.major
+
+#print(p1.major)
+print(p2.major)
+
+del p1

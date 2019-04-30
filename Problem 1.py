@@ -1,9 +1,15 @@
 #Deshawn Smith
-#04/16/2019
+#4/30/2019
 
-#Problem 1 this is a for loop that iterate over a dictionary.
+#This program will give you the number for a sample class.
 
-d = {"a": 5, "b": 10, "c": 15}
+class sampleclass:
+    x = 15
 
-for x, y in d.items():
-    print(x, y)
+p1 = sampleclass()
+
+print(p1.x)
+
+p1 = sampleclass()
+
+print(p1)
